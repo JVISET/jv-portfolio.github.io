@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Silkscreen:wght@400;700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/reno-mono');
+
+*{
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+html {
+    block-size: 100%;
+    inline-size: 100%;
+    height: 100%;
+    width: 100vw;
+
+    margin: 0%;
+    padding: 0%;
+    
+    scroll-behavior: smooth;
+  }
+
+  @media (orientation: landscape) {
+    body {
+      grid-auto-flow: column;
+    }
+  }
+  
+  body {
+    min-block-size: 100%;
+    min-inline-size: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    place-content: center;
+    font-family: system-ui, sans-serif;
+  }
+  
+  a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    z-index: 1;
+  }
+
+  .container_contents {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    align-content: center;
+    left: 0%;
+    border: #000 5px solid;
+    
+  }
+
+  /* @media screen and(max-width:800px){
+    .pageNav{
+      flex-direction: column;
+    }
+  } */
+
+
+    /* -------------------------------------------------------------------------------------------------------------- */
+
+  .pageHeader {
+    position: relative;
+    width:100%;
+    padding: 1.5% 6% 1% 6%;
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: 5px solid black;
+    background-color: #ffffff;
+    opacity: 0.8;
+    background-image: radial-gradient(#0a0a0a 0.6000000000000001px, #ffffff 0.6000000000000001px);
+    background-size: 12px 12px;
+
+    /* border: #1820EF solid 1px; */
+  }
+
+  .img_logo_head {
+    position: relative;
+    height: 4vw;
+    order: 1;
+
+    /* border: 1px solid red; */
+  }
+
+  .textBox_contact {
+    position: relative;
+    height: 4vw;
+    order: 2;
+
+    font-family: 'Reno Mono', sans-serif;
+    font-size: 1vw;
+    font-weight: 200;
+
+    /* border: 1px solid red; */
+  }
+
+  /* -------------------------------------------------------------------------------------------------------------- */
+
+  .pageNav {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1% 6%;
+    z-index: 2;
+
+    font-family: 'Reno Mono', sans-serif;
+    letter-spacing: -1%;
+
+    /* border: 1px solid red; */
+  }
+
+  .pageNav a {
+    border-radius: 1vw;
+  }
+
+  .tabNav {
+    position: relative;
+    width: 100%;
+    padding: 1% 0% 0.25% 0%;
+
+    /* border: 1px solid blue; */
+  }
+
+  .container_Nav {
+    position: relative;
+    padding: 0;
+    margin: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .NavBar {
+    position: relative;
+    padding: 1.5% 5.6vw 0 5.6vw;
+    margin: 2% 0;
+
+    font-size: 65%;
+    font-weight: 700;
+    font-style: normal;
+    color: #000;
+    text-align: center;
+    vertical-align: middle;
+
+    background-color: transparent;
+    border: 3px solid black;
+    border-radius: 1vw;
+    transition: 0.25s cubic-bezier(.64,-0.01,.38,1);
+    list-style-type: none;
+  }
+
+  .NavBar:hover {
+    box-shadow: 5px 5px #1820EF;
+    background-color: #ffc024;
+    transform: scale(1.05);
+    z-index: 1;
+  }
+
+  .NavBar:active {
+    box-shadow: 2px 2px #1820EF;
+    position: relative;
+    transform: translate(0.1em);
+  }
+
+  /* -------------------------------------------------------------------------------------------------------------- */
+
+  .pageFooter {
+    width: 100%;
+    height: fit-content;
+
+    margin: 5vw 0 0 0;
+    
+    display: block;
+    block-size: auto;
+
+    /* font-family: 'Roboto Mono', monospace; */
+    font-family: 'Reno Mono', sans-serif;
+    line-height: 0.9;
+
+    /* border: #000 1px solid; */
+  }
+
+  .footer_info {
+    position: relative;
+    width: 100%;
+    height: 90%;
+
+    display:flex;
+    flex-wrap: wrap;
+    padding: 0% 6%;
+
+    border-top: #000 5px solid;
+    background-color: #ffffff;
+    opacity: 0.8;
+    background-image: radial-gradient(#0a0a0a 0.6000000000000001px, #ffffff 0.6000000000000001px);
+    background-size: 12px 12px;
+  }
+
+  .footer_info_logo, .footer_info_port, .footer_info_social {
+    position: relative;
+    height:fit-content;
+    width: 33.333%;
+
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    padding: 1.5% 0 2% 0;
+
+    /* border: purple 1px solid; */
+  }
+
+  .footer_info_logo {
+    margin-top: 1%;
+  }
+
+  .footer_info_port, .footer_info_social {
+    padding-left: 5%;
+  }
+
+  .footer_info_port a, .footer_info_social a {
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+
+    padding: -5% 0% -5% 0;
+    display: flex;
+    flex-direction: row;
+
+    font-weight: 250;
+    
+    /* border: blue 1px solid; */
+  }
+
+  .img_logo_foot {
+    position: absolute;
+    top: 70%;
+    left: 40%;
+
+    /* border: blue 1px solid; */
+  }
+
+  .footer_info_social a img {
+    position: inherit;
+    width: 7%;
+    height: 7%;
+    
+    margin-right: 5%;
+    margin-top: 2.4%;
+
+    /* border: blue 1px solid; */
+  }
+
+  .footer_info_port a:hover, .footer_info_social a:hover {
+    color: #FF4E42;
+  }
+
+  .footer_info_port {
+    border-left: #000 3px solid;
+    border-right: #000 3px solid;
+  }
+
+  .footer_contact {
+    position: relative;
+    width: 100%;
+    height: 10%;
+
+    display: flex;
+    justify-content:space-between;
+    padding: 0 6%;
+
+    border-top: #000 5px solid;
+    border-top: #000 2.5px solid;
+    font-weight: 100;
+    font-size: 75%;
+  }
+  
+  /* -------------------------------------------------------------------------------------------------------------- */
+  /* -------------------------------------------------------------------------------------------------------------- */
+  /* -------------------------------------------------------------------------------------------------------------- */
+  /* -------------------------------------------------------------------------------------------------------------- */
+
+
+
