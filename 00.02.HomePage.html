@@ -3,10 +3,18 @@
     <head>
         <title>My Portfolio - Home</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Load Require CSS -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Font CSS -->
+        <link href="assets/css/boxicon.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+        <!-- Load Tempalte CSS -->
+        <link rel="stylesheet" href="assets/css/templatemo.css">
         <link rel="stylesheet" href="assets/css/01.00.Template_Design.css">
+        <!-- Custom CSS -->
         <link rel="stylesheet" href="assets/css/01.02.HomePage-Design.css">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <!-- <link rel="stylesheet" href="HomePage-Design2.scss"> -->
+        
         <script src="assets/js/02.01.HomePage-Function.js"></script>
     </head>
 
@@ -269,6 +277,38 @@
                 mirror:"true",
             });
         </script>
+
+        <!-- Bootstrap -->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!-- Load jQuery require for isotope -->
+        <script src="assets/js/jquery.min.js"></script>
+        <!-- Isotope -->
+        <script src="assets/js/isotope.pkgd.js"></script>
+        <!-- Page Script -->
+        <script>
+            $(window).load(function() {
+                // init Isotope
+                var $projects = $('.projects').isotope({
+                    itemSelector: '.project',
+                    layoutMode: 'fitRows'
+                });
+                $(".filter-btn").click(function() {
+                    var data_filter = $(this).attr("data-filter");
+                    $projects.isotope({
+                        filter: data_filter
+                    });
+                    $(".filter-btn").removeClass("active");
+                    $(".filter-btn").removeClass("shadow");
+                    $(this).addClass("active");
+                    $(this).addClass("shadow");
+                    return false;
+                });
+            });
+        </script>
+        <!-- Templatemo -->
+        <script src="assets/js/templatemo.js"></script>
+        <!-- Custom -->
+        <script src="assets/js/custom.js"></script>
     
     </body>
 </html>
