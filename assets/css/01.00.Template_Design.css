@@ -1,15 +1,9 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Silkscreen:wght@400;700&display=swap');
 @import url('http://fonts.cdnfonts.com/css/reno-mono');
 
 *{
   -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
   box-sizing:border-box;
 }
 
@@ -34,8 +28,7 @@ html {
   body {
     min-block-size: 100%;
     min-inline-size: 100%;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     height: 100%;
     place-content: center;
     font-family: system-ui, sans-serif;
@@ -52,8 +45,7 @@ html {
     margin: 0%;
     padding: 0%;
     width: 100%;
-    -ms-flex-line-pack: center;
-        align-content: center;
+    align-content: center;
     left: 0%;
     border: #000 5px solid;
     
@@ -72,17 +64,12 @@ html {
     position: relative;
     width:100%;
     padding: 1.5% 6% 1% 6%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
 
     border-bottom: 5px solid black;
     background-color: #ffffff;
     opacity: 0.8;
-    background-image: -o-radial-gradient(#0a0a0a 0.6000000000000001px, #ffffff 0.6000000000000001px);
     background-image: radial-gradient(#0a0a0a 0.6000000000000001px, #ffffff 0.6000000000000001px);
     background-size: 12px 12px;
 
@@ -92,9 +79,7 @@ html {
   .img_logo_head {
     position: relative;
     height: 4vw;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    order: 1;
 
     /* border: 1px solid red; */
   }
@@ -102,9 +87,7 @@ html {
   .textBox_contact {
     position: relative;
     height: 4vw;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    order: 2;
 
     font-family: 'Reno Mono', sans-serif;
     font-size: 1vw;
@@ -117,14 +100,9 @@ html {
 
   .pageNav {
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 1% 6%;
     z-index: 2;
 
@@ -150,14 +128,9 @@ html {
     position: relative;
     padding: 0;
     margin: 0%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .NavBar {
@@ -175,37 +148,27 @@ html {
     background-color: transparent;
     border: 3px solid black;
     border-radius: 1vw;
-    -webkit-transition: 0.25s cubic-bezier(.64,-0.01,.38,1);
-    -o-transition: 0.25s cubic-bezier(.64,-0.01,.38,1);
     transition: 0.25s cubic-bezier(.64,-0.01,.38,1);
     list-style-type: none;
   }
 
   .NavBar:hover {
-    -webkit-box-shadow: 5px 5px #1820EF;
-            box-shadow: 5px 5px #1820EF;
+    box-shadow: 5px 5px #1820EF;
     background-color: #ffc024;
-    -webkit-transform: scale(1.05);
-        -ms-transform: scale(1.05);
-            transform: scale(1.05);
+    transform: scale(1.05);
     z-index: 1;
   }
 
   .NavBar:active {
-    -webkit-box-shadow: 2px 2px #1820EF;
-            box-shadow: 2px 2px #1820EF;
+    box-shadow: 2px 2px #1820EF;
     position: relative;
-    -webkit-transform: translate(0.1em);
-        -ms-transform: translate(0.1em);
-            transform: translate(0.1em);
+    transform: translate(0.1em);
   }
 
   /* -------------------------------------------------------------------------------------------------------------- */
 
   .pageFooter {
     width: 100%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
     height: fit-content;
 
     margin: 5vw 0 0 0;
@@ -225,42 +188,25 @@ html {
     width: 100%;
     height: 90%;
 
-    display:-webkit-box;
-
-    display:-ms-flexbox;
-
     display:flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     padding: 0% 6%;
 
     border-top: #000 5px solid;
     background-color: #ffffff;
     opacity: 0.8;
-    background-image: -o-radial-gradient(#0a0a0a 0.6000000000000001px, #ffffff 0.6000000000000001px);
     background-image: radial-gradient(#0a0a0a 0.6000000000000001px, #ffffff 0.6000000000000001px);
     background-size: 12px 12px;
   }
 
   .footer_info_logo, .footer_info_port, .footer_info_social {
     position: relative;
-    height:-webkit-fit-content;
-    height:-moz-fit-content;
     height:fit-content;
     width: 33.333%;
 
-    display: -webkit-box;
-
-    display: -ms-flexbox;
-
     display: flex;
-    -webkit-box-orient:vertical;
-    -webkit-box-direction:normal;
-        -ms-flex-direction:column;
-            flex-direction:column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction:column;
+    justify-content: center;
     padding: 1.5% 0 2% 0;
 
     /* border: purple 1px solid; */
@@ -276,21 +222,12 @@ html {
 
   .footer_info_port a, .footer_info_social a {
     position: relative;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
     height: fit-content;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
     width: fit-content;
 
     padding: -5% 0% -5% 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
 
     font-weight: 250;
     
@@ -330,14 +267,8 @@ html {
     width: 100%;
     height: 10%;
 
-    display: -webkit-box;
-
-    display: -ms-flexbox;
-
     display: flex;
-    -webkit-box-pack:justify;
-        -ms-flex-pack:justify;
-            justify-content:space-between;
+    justify-content:space-between;
     padding: 0 6%;
 
     border-top: #000 5px solid;
@@ -350,4 +281,6 @@ html {
   /* -------------------------------------------------------------------------------------------------------------- */
   /* -------------------------------------------------------------------------------------------------------------- */
   /* -------------------------------------------------------------------------------------------------------------- */
+
+
 
